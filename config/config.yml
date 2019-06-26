@@ -2,7 +2,9 @@
 # app/config/config.yml
 
 framework:
-    translator: ~
+    default_locale: 'en'
+    translator:
+        fallbacks: ['en']
 
 fos_user:
     db_driver: orm # other valid values are 'mongodb' and 'couchdb'

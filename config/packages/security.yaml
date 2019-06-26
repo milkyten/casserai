@@ -28,8 +28,8 @@ security:
         - { path: ^/register, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/resetting, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/admin/, role: ROLE_ADMIN }
-        - { path: ^/user/, role: ROLE_SUPER_ADMIN }
-        - { path: ^/image/, role: ROLE_SUPER_ADMIN }
+        - { path: ^/user/, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/image/, role: ROLE_ADMIN }
         - { path: ^/kamer/, role: ROLE_SUPER_ADMIN }
         - { path: ^/reservering/, role: ROLE_ADMIN }
         - { path: ^/soort/, role: ROLE_SUPER_ADMIN }
