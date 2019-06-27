@@ -33,5 +33,5 @@ security:
         - { path: ^/kamer/, role: ROLE_SUPER_ADMIN }
         - { path: ^/reservering/, role: ROLE_ADMIN }
         - { path: ^/soort/, role: ROLE_SUPER_ADMIN }
-        - { path: ^/kamer/, role: ROLE_SUPER_ADMIN }
+        - { path: ^/kamer/, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/betaal/, role: ROLE_SUPER_ADMIN }
